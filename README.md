@@ -1,31 +1,15 @@
-# http-log-analysis-splunk
+## HTTP Log Analysis using Splunk
+This project simulates analyzing a sample HTTP log to identify anomalies, web traffic patterns, etc...
 
+## Tools Used
+- Splunk enterprise
+- Kali linux
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## Steps Performed
+- Imported http log file to splunk
+- Analysed fields
+- Used SPL (Search Processing Language) to perform tasks like
+  - Search for HTTP Events
 
 
 ## Steps to Analyze HTTP Log Files in Splunk SIEM
@@ -67,6 +51,9 @@ index="http_logs" sourcetype="httplogs"
 | stats count by status
 | where status >= 400
 ```
+
+## Conclusion
+Analyzing FTP log files using Splunk SIEM provides valuable insights into file transfer activities within a network. By monitoring FTP events, detecting anomalies, and correlating with other logs, organizations can enhance their security posture and protect against various cyber threats.
 - Investigate file transfers to or from suspicious IP addresses.
 ```
 index=<your_http_index> sourcetype=<your_http_sourcetype>
