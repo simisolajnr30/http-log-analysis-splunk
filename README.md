@@ -56,5 +56,15 @@ index=<your_http_index> sourcetype=<your_http_sourcetype>
 | search src_ip="suspicious_ip"
 ```
 
+![image](screenshots/http-1.png)
+![image](screenshots/http-2.png)
+![image](screenshots/http-3.png)
+![image](screenshots/http-4.png)
+![image](screenshots/http-5.png)
+![image](screenshots/http-6.png)
+![image](screenshots/http-7.png)
+
+
+
 ## Conclusion
 Analyzing FTP log files using Splunk SIEM provides valuable insights into file transfer activities within a network. By monitoring FTP events, detecting anomalies, and correlating with other logs, organizations can enhance their security posture and protect against various cyber threats.
