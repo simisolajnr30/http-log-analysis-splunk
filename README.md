@@ -56,15 +56,13 @@ index=<your_http_index> sourcetype=<your_http_sourcetype>
 | search src_ip="suspicious_ip"
 ```
 
-![image](screenshots/http-1.png)
-![image](screenshots/http-2.png)
-![image](screenshots/http-3.png)
-![image](screenshots/http-4.png)
-![image](screenshots/http-5.png)
-![image](screenshots/http-6.png)
-![image](screenshots/http-7.png)
-
-
+![image](http-1.png)
+![image](http-2.png)
+![image](http-3.png)
+![image](http-4.png)
+![image](http-5.png)
+![image](http-6.png)
+![image](http-7.png)
 
 
 ## Conclusion
