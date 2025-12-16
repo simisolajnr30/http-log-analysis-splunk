@@ -35,35 +35,35 @@
 - Open Splunk interface and navigate to the search bar.
 - Enter the following search query to retrieve HTTP events:
 ```
-index=<your_http_index> sourcetype=<your_http_sourcetype>
+index="http_logs" sourcetype="httplogs"
 ```
 
 ### 3. Analyze Web Traffic Patterns
 - Determine the distribution of request methods (GET, POST, etc.) to understand web traffic patterns.
 ```
-index=<your_http_index> sourcetype=<your_http_sourcetype>
+index="http_logs" sourcetype="httplogs"
 | stats count by method
 ```
 - Identify top URLs or endpoints accessed by users.
 ```
-index=<your_http_index> sourcetype=<your_http_sourcetype>
+index="http_logs" sourcetype="httplogs"
 | top limit=10 uri
 ```
 - Analyze response codes to identify errors or successful requests.
 ```
-index=<your_http_index> sourcetype=<your_http_sourcetype>
+index="http_logs" sourcetype="httplogs"
 | stats count by status
 ```
 
 ### 4. Detect Anomalies
 - Look for unusual patterns in file transfer activity.
 ```
-index=<your_http_index> sourcetype=<your_http_sourcetype>
+index="http_logs" sourcetype="httplogs"
 | timechart span=1h count by _time
 ```
 - Analyze high volumes of error responses:
 ```
-index=<your_http_index> sourcetype=<your_http_sourcetype>
+index="http_logs" sourcetype="httplogs"
 | stats count by status
 | where status >= 400
 ```
