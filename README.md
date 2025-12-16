@@ -52,7 +52,7 @@ index="http_logs" sourcetype="httplogs"
 ```
 - Investigate file transfers to or from suspicious IP addresses.
 ```
-index=<your_http_index> sourcetype=<your_http_sourcetype>
+index="http_logs" sourcetype="httplogs"
 | search src_ip="suspicious_ip"
 ```
 
