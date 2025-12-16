@@ -3,7 +3,6 @@ This project simulates analyzing a sample HTTP log to identify anomalies, web tr
 
 ## Tools Used
 - Splunk enterprise
-- Kali linux
 
 ## Steps Performed
 - Imported http log file to splunk
